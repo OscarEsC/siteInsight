@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-#from ./siteInsight/ import api
 
+
+#Todas las peticiones a siteInsight se manejan dentro de la app api
 urlpatterns = [
-    path('siteinsight/', include('siteInsight.api.urls')),
+    path('siteInsight/', include('siteInsight.api.urls')),
     path('admin/', admin.site.urls),
 ]

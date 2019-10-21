@@ -7,10 +7,29 @@
     <body>
         <h1>SiteInsight</h1>
         <h3>Analisis masivo de vulnerabilidades web</h3>
-        <ul>
-            <li>aqui</li>
-            <li>podrian ir</li>
-            <li>pestana para modulos</li>
-        </ul>
+        <div>
+            <ul>
+                <li>aqui</li>
+                <li>podrian ir</li>
+                <li>pestana para modulos</li>
+            </ul>
+        </div>
+        <div>
+            {% block content %}
+            <form action="update_config/" method="POST" enctype="multipart/form-data">
+                <label for="fileToUpload">Selecciona el archivo de configuracion: </label>
+                <input type="file" name="fileToUpload" id="fileToUpload" accept=".json">
+                <input type="submit" value="actualizar" name="submit">
+    
+            </form>
+
+            {% if uploaded_file %}
+                <p>Se ha actualizado la configuracion</p>
+                <p><a href="{% url 'index' %}">Return to home</a></p>
+            {% endif %}
+            
+
+            {% endblock %}
+        </div>
     </body>
 </html>
