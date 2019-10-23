@@ -9,7 +9,7 @@
         <h3>Analisis masivo de vulnerabilidades web</h3>
         <div>
             <ul>
-                <li>aqui</li>
+                <li><a href="{% url 'obtener_informacion' %}">Obtencion de informacion</a></li>
                 <li>podrian ir</li>
                 <li>pestana para modulos</li>
             </ul>
@@ -25,6 +25,11 @@
 
             {% if uploaded_file %}
                 <p>Se ha actualizado la configuracion</p>
+                <p><a href="{% url 'index' %}">Return to home</a></p>
+            {% endif %}
+
+            {% if exceeded_file %}
+                <p>El archivo de configuracion debe ser menor a 2 MB</p>
                 <p><a href="{% url 'index' %}">Return to home</a></p>
             {% endif %}
             
