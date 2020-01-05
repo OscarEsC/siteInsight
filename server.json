@@ -1,0 +1,14 @@
+{
+    "Nginx": {
+        "server": "server",
+        "in_order": ["server", "date", "content-type", "content-length", "connection"]
+    },
+    "Apache": {
+        "server": "server",
+        "in_order" : ["date", "server", "location", "content-length", "content-type"]
+    },
+    "IIS": {
+        "server": "server",
+        "in_order": ["content-type", "server", "x-powered-by", "date"]
+    }
+}
