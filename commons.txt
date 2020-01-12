@@ -1,0 +1,35 @@
+cmd-asp-5.1.asp
+cmdasp.asp
+cmdasp.aspx
+cfexec.cfm
+cmdjsp.jsp
+jsp-reverse.jsp
+perlcmd.cgi
+perl-reverse-shell.pl
+findsock.c
+php-backdoor.php
+php-findsock-shell.php
+php-reverse-shell.php
+qsd-php-backdoor.php
+simple-backdoor.php
+529.php
+c99_locus7s.php
+c99_madnet.php
+cpanel.php
+cw.php
+cybershell.php
+erne.php
+C99madShell.php
+CasuS 1.5.php
+CrystalShell v.1.php
+Cyber Shell (v 1.0).php
+Cyber Shell.php
+KA_uShell 0.1.6.php
+MyShell.php
+Mysql_interface_v1.0.php
+NCC-Shell.php
+Predator.php
+Rootshell.v.1.0.php
+Uploader.php
+WinX Shell.php
+
